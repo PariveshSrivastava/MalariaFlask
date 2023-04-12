@@ -11,7 +11,7 @@ app = Flask(__name__)
 CORS(app, origins="http://localhost:3000")
 
 
-model = tf.keras.models.load_model('./trainedModel/malaria_cnn_model.h5')
+model = tf.keras.models.load_model('malaria_cnn_model.h5')
 
 
 def preprocess_image(image):
